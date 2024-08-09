@@ -1,0 +1,44 @@
+<!-- Formulario -->
+<div class="container text-center">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <form (ngSubmit)="f.form.valid && agregarValor()" #f="ngForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="agregar_tipo">Tipo</label>
+                                <select [ngClass]="{redfocus: tipo === 'egreso'}" (change)="tipoOperador($event)"
+                                    class="form-control" id="agregar_tipo">
+                                    <option value="ingreso">Ingreso (+)</option>
+                                    <option value="egreso">Egreso (-)</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="agregar_descripcion">Descripción</label>
+                                <input [ngClass]="{redfocus: tipo === 'egreso'}" type="text" class="form-control"
+                                    id="descripcionInput" placeholder="Agregar Descripción" name="descripcionInput"
+                                    [(ngModel)]="descripcionInput" required>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="agregar_valor">Valor</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">$</span>
+                                    </div>
+                                    <input [ngClass]="{redfocus: tipo === 'egreso'}" type="number" class="form-control"
+                                        id="agregar_valor" placeholder="Valor" name="valorInput"
+                                        [(ngModel)]="valorInput" required>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-1 align-self-end">
+                                <button [ngClass]="{redfocus: tipo === 'egreso'}" type="submit"
+                                    class="btn btn-primary btn-block"><i class="ion-ios-checkmark-outline"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

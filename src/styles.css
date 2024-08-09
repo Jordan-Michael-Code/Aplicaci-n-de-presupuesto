@@ -1,0 +1,13 @@
+.elemento_descripcion {
+    flex: 1;
+  }
+  .elemento_porcentaje {
+    margin-left: 10px;
+  }
+  .elemento_valor {
+    margin-right: 10px;
+  }
+
+  .redfocus:focus {
+    border: 1px solid rgb(178, 34, 34) !important;
+  }

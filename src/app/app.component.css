@@ -1,0 +1,7 @@
+
+    .btn-close {
+        display: none;
+    }
+    .elemento:hover .btn-close {
+        display: inline-block;
+    }

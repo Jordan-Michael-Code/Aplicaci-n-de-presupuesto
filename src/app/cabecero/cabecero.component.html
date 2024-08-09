@@ -1,0 +1,33 @@
+<div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card bg-white">
+          <div class="card-body">
+            <h3 class="card-title mb-4" style="font-weight: bold; ">Presupuesto Disponible:</h3>
+            <h3 class="mb-4">{{presupuestoTotal | currency:'USD':'symbol':'1.2-2'}}
+                <i class="fas fa-money-bill"></i></h3>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card bg-success text-white">
+                  <div class="card-body">
+                    <h6 class="card-title">Ingresos</h6>
+                    <p class="card-text">{{ingresoTotal | currency:'USD':'symbol':'1.2-2'}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card bg-danger text-white">
+                  <div class="card-body">
+                    <h6 class="card-title">Egresos</h6>
+                    <p class="card-text">- {{egresoTotal | currency:'USD':'symbol':'1.2-2'}} ({{porcentajeTotal}}%)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
