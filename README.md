@@ -1,7 +1,7 @@
 # PresupuestoApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
-https://postimg.cc/delete/pwD4dNGn/835aa2bf
+![image](https://github.com/user-attachments/assets/ba39b841-0ec7-442a-9008-6dd4c77a8370)
 
 ## Development server
 
